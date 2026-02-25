@@ -128,6 +128,5 @@ form.onsubmit = e => {
     if (search.value) {
         getMovies(SEARCH_API + encodeURIComponent(search.value));
         search.value = '';
-        main.dataset.view = 'search';
     } else location.reload();
 };
